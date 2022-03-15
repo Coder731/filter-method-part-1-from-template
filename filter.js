@@ -62,3 +62,12 @@ const students = [
     ]
   },
 ];
+
+
+// reccommended if have a complex filter (to use callbacks (written first and then passed into complex filter function))
+const has5yearsExp = skill => skill.yrsExperience >= 5; // second callback function (to be called by original callback function)
+const hasStrongSkills = student => student.skills.filter(has5yearsExp).length > 0; // callback function
+const candidates = students.filter(hasStrongSkills); // pass callback function into filter method
+console.log(candidates);
+// attempt at challenge
+// const names = candidates.map(students[(for (var i in students[i]){/*return object */}].name);
