@@ -70,4 +70,5 @@ const hasStrongSkills = student => student.skills.filter(has5yearsExp).length > 
 const candidates = students.filter(hasStrongSkills); // pass callback function into filter method
 console.log(candidates);
 // attempt at challenge
+// challenge: use const names = candidates.map(???) to return only candidates names;
 // const names = candidates.map(students[(for (var i in students[i]){/*return object */}].name);
